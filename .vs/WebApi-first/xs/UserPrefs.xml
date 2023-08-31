@@ -1,5 +1,30 @@
-﻿<Properties StartupConfiguration="{B41933D3-D1FD-486F-8E9C-D6E6D28EF72E}|https">
-  <MonoDevelop.Ide.ItemProperties.WebApi-first FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.WebApi-second FirstBuild="True" />
+﻿<Properties StartupConfiguration="{B41933D3-D1FD-486F-8E9C-D6E6D28EF72E}|https" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WebApi-first PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi-first/Controllers/FirstApiController.cs">
+    <Files>
+      <File FileName="WebApi-first/Controllers/FirstApiController.cs" Line="42" Column="103" />
+      <File FileName="WebApi-second/Controllers/SecondApiController.cs" Line="17" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebApi-first" expanded="True" selected="True">
+            <Node name="WebApi-first">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="WebApi-second">
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <Debugger.DebugSourceFolders />
 </Properties>
