@@ -33,7 +33,7 @@ namespace WebApi_second.Controllers
 
 
         //Method to handle the call request(from other Api) and provide response
-        [HttpGet("RecieveFromApi")]                       //Route for receieving request
+        [HttpGet("RecieveFromApi1")]                       //Route for receieving request
         public IActionResult RecieveFromApi1()
         {
             var message = "Successfully received call from Api1 in Api2";
@@ -48,7 +48,7 @@ namespace WebApi_second.Controllers
 
             HttpClient client = new HttpClient();//For sending request
 
-            var response = await client.GetAsync("https://localhost:7131/api/FirstApi/RecieveFromApi");
+            var response = await client.GetAsync("https://localhost:7131/api/FirstApi/RecieveFromApi2");
 
             if (response.IsSuccessStatusCode)
             {

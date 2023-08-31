@@ -27,6 +27,8 @@ namespace WebApi_first.Controllers
 
             System.Threading.Thread.Sleep(400); //400millisec delay/pause here in execution of next code
 
+            CallApi2().Wait();
+
 
             String[] greeting = new[] { "Moi from 1st Api" };
             return greeting;
@@ -46,7 +48,8 @@ namespace WebApi_first.Controllers
             //GetAsync: sends an asynchronous HTTP GET request to the specified URL
             //await: wait for the reponse but let main method do next tasks
 
-            var response = await client.GetAsync("https://localhost:7256/api/SecondApi/RecieveFromApi");
+            var response = await client.GetAsync("https://localhost:7266/api/SecondApi/RecieveFromApi1");
+           
 
             if (response.IsSuccessStatusCode)
             {
@@ -67,7 +70,7 @@ namespace WebApi_first.Controllers
 
 
         //Method to handle the call request(from other Api) and provide response
-        [HttpGet("RecieveFromApi")]                       //Route for receieving request
+        [HttpGet("RecieveFromApi2")]                       //Route for receieving request
         public IActionResult RecieveFromApi2()
         {
             var message = "Successfully received call from Api2 in Api1";
@@ -75,6 +78,7 @@ namespace WebApi_first.Controllers
 
         }
 
+        
 
     }
 }
